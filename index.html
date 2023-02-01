@@ -15,12 +15,23 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
     </style>
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
     <header>
-        <div class="header">
+        <div class="header-mobile" <div class="header__logo"><a class="link link--headerMobile" href="index.html"
+                title="WebStudio">
+                <span class="logo">Web</span><span class="logo logo--header">Studio</span></a>
+            <div><button class="header-mobile__menuToggle js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg id="header-mobile__icon-hamburger">
+                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                    </svg>
+                </button></div>
+        </div>
+        </div>
+        <div class="header--desktop">
             <div class="header__logo"><a class="link link--header" href="index.html" title="WebStudio">
                     <span class="logo">Web</span><span class="logo logo--header">Studio</span></a>
                 <nav class="header-nav">
@@ -60,114 +71,131 @@
             </div>
         </div>
         <article class="service-order">
-            <section class="section">
+            <section class="section--mobile">
                 <h1 class="service-order__h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                 <button class="service-order__btn" type="button" data-modal-open>Zamów usługę</button>
                 <div class="service-order__modal"></div>
             </section>
         </article>
     </header>
-    <main class="presentation">
-        <article class="section description">
-            <ul class="ul">
+    <main class="presentation--mobile">
+        <article class="section--mobile description">
+            <ul class="ul--mobile">
                 <li>
-                    <div class="description__rectangle">
-                        <svg class="description__icons">
-                            <use href="./images/icons.svg#icon-antenna-1"></use>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="description__h3">LOREM IPSUM</h3>
-                        <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                            vel
-                            arcu
-                            sem. Sed non sodales dui. Interdum et malesuada</p>
+                    <div class="section--mobile">
+                        <div class="description__rectangle--mobile">
+                            <svg class="description__icons">
+                                <use href="./images/icons.svg#icon-antenna-1"></use>
+                            </svg>
+                        </div>
+                        <div class="description__text">
+                            <h3 class="description__h3 description__h3--mobile">LOREM IPSUM</h3>
+                            <p class="description__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nam
+                                vel
+                                arcu
+                                sem. Sed non sodales dui. Interdum et malesuada</p>
+                        </div>
                     </div>
                 </li>
                 <li>
-                    <div class="description__rectangle">
-                        <svg class="description__icons">
-                            <use href="./images/icons.svg#icon-clock-1"></use>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="description__h3">LOREM IPSUM</h3>
+                    <div class="section--mobile">
+                        <div class="description__rectangle--mobile">
+                            <svg class="description__icons">
+                                <use href="./images/icons.svg#icon-clock-1"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="description__text">
+                                <h3 class="description__h3 description__h3--mobile">LOREM IPSUM</h3>
+                                <p class="description__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nam
+                                    vel
+                                    arcusem.
+                                    Sed non sodales dui. Interdum et malesuada</p>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <div class="section--mobile">
+                        <div class="description__rectangle--mobile">
+                            <svg class="description__icons">
+                                <use href="./images/icons.svg#icon-diagram-1"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="description__text">
+                                <h3 class="description__h3 description__h3--mobile">LOREM IPSUM</h3>
+                                <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam
+                                    vel
+                                    arcusem.
+                                    Sed non sodales dui. Interdum et malesuada</p>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <div class="section--mobile">
+                        <div class="description__rectangle--mobile">
+                            <svg class="description__icons">
+                                <use href="./images/icons.svg#icon-astronaut-1"></use>
+                            </svg>
+                        </div>
+                        <div class="description__text"></div>
+                        <h3 class="description__h3 description__h3--mobile">LOREM IPSUM</h3>
                         <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
                             vel
                             arcusem.
                             Sed non sodales dui. Interdum et malesuada</p>
                     </div>
-                </li>
-                <li>
-                    <div class="description__rectangle">
-                        <svg class="description__icons">
-                            <use href="./images/icons.svg#icon-diagram-1"></use>
-                        </svg>
                     </div>
-                    <div>
-                        <h3 class="description__h3">LOREM IPSUM</h3>
-                        <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                            vel
-                            arcusem.
-                            Sed non sodales dui. Interdum et malesuada</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="description__rectangle">
-                        <svg class="description__icons">
-                            <use href="./images/icons.svg#icon-astronaut-1"></use>
-                        </svg>
-                    </div>
-                    <div>
-                        <h3 class="description__h3">LOREM IPSUM</h3>
-                        <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                            vel
-                            arcusem.
-                            Sed non sodales dui. Interdum et malesuada</p>
                     </div>
                 </li>
             </ul>
         </article>
-        <article class="section ">
-            <h2 class="presentation__h2">Czym się zajmujemy</h2>
-            <div>
-                <ul class="our-work">
-                    <li class="our-work__image">
-                        <img src="./images/tablet.jpg" alt="programer working his desk office" width="370" height="294">
-                        <div class="our-work__backgroundForText">
-                            <p class="our-work__text">aplikacje komputerowe</p>
-                        </div>
-                    </li>
-                    <li class="our-work__image">
-                        <img src="./images/laptop.jpg"
-                            alt="designers are developing application smartphones team creators is working interface mobile phones"
-                            width="370" height="294">
-                        <div class="our-work__backgroundForText">
-                            <p class="our-work__text">aplikacje mobilne</p>
-                        </div>
-                    </li>
-                    <li class="our-work__image">
-                        <img src="./images/colours.jpg"
-                            alt="creative artist web design with working colour selection graphic tablet" width="370"
-                            height="294">
-                        <div class="our-work__backgroundForText">
-                            <P class="our-work__text">rozwiązania graficzne</P>
-                        </div>
-                    </li>
-                </ul>
+        <article class="section section--mobile">
+            <div class="presentation__ourWork--mobile">
+                <h2 class="presentation__h2">Czym się zajmujemy</h2>
+                <div>
+                    <ul class="our-work">
+                        <li class="our-work__image">
+                            <img src="./images/tablet.jpg" alt="programer working his desk office" width="370"
+                                height="294">
+                            <div class="our-work__backgroundForText">
+                                <p class="our-work__text">aplikacje komputerowe</p>
+                            </div>
+                        </li>
+                        <li class="our-work__image">
+                            <img src="./images/laptop.jpg"
+                                alt="designers are developing application smartphones team creators is working interface mobile phones"
+                                width="370" height="294">
+                            <div class="our-work__backgroundForText">
+                                <p class="our-work__text">aplikacje mobilne</p>
+                            </div>
+                        </li>
+                        <li class="our-work__image">
+                            <img src="./images/colours.jpg"
+                                alt="creative artist web design with working colour selection graphic tablet"
+                                width="370" height="294">
+                            <div class="our-work__backgroundForText">
+                                <P class="our-work__text">rozwiązania graficzne</P>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </article>
-        <article class="section">
-            <h2 class="presentation__h2">Nasz zespół</h2>
-            <ul class="ul">
+        <article class="section section--mobile">
+            <h2 class="presentation__h2--ourTeam">Nasz zespół</h2>
+            <ul class="ul--mobile our-team-mobile">
                 <li>
                     <figure class="our-team__figure">
-                        <img src="./images/product-designer.jpg" alt="photo of product designer John Doe" width="270"
-                            height="260">
+                        <img src="./images/product-designer.jpg" alt="photo of product designer John Doe"
+                            width="100%-30px">
                         <figcaption class="our-team__figcuption">
                             <div class="our-team__name">John Doe</div>
                             <div class="our-team__function">Product Designer</div>
-                            <ul class="ul our-team__socialMedia">
+                            <ul class="ul our-team__socialMedia--mobile">
                                 <li><a class="our-team__socialMediaLink" href="https://www.instagram.com/"
                                         target="_blank" title="istagram">
                                         <div class="our-team__socialMediaCircle">
@@ -211,11 +239,11 @@
                 <li>
                     <figure class="our-team__figure">
                         <img src="./images/frontend-developer.jpg" alt="photo of frontend developer John Doe"
-                            width="270" height="260">
+                            width="100%-30px">
                         <figcaption class="our-team__figcuption">
                             <div class="our-team__name">John Doe</div>
                             <div class="our-team__function">Frontend Developer</div>
-                            <ul class="ul our-team__socialMedia">
+                            <ul class="ul our-team__socialMedia--mobile">
                                 <li><a class="our-team__socialMediaLink" href="https://www.instagram.com/"
                                         target="_blank" title="istagram">
                                         <div class="our-team__socialMediaCircle">
@@ -258,11 +286,11 @@
                 </li>
                 <li>
                     <figure class="our-team__figure">
-                        <img src="./images/marketing.jpg" alt="photo of marketing John Doe" width="270" height="260">
+                        <img src="./images/marketing.jpg" alt="photo of marketing John Doe" width="100%-30px">
                         <figcaption class="our-team__figcuption">
                             <div class="our-team__name">John Doe</div>
                             <div class="our-team__function">Marketing</div>
-                            <ul class="ul our-team__socialMedia">
+                            <ul class="ul our-team__socialMedia--mobile">
                                 <li class="li-social-media"><a class="our-team__socialMediaLink"
                                         href="https://www.instagram.com/" target="_blank" title="istagram">
                                         <div class="our-team__socialMediaCircle">
@@ -304,63 +332,60 @@
                     </figure>
                 </li>
                 <li>
-                    <div class="photo">
-                        <figure class="our-team__figure">
-                            <img src="./images/ui-designer.jpg" alt="photo of marketing John Doe" width="270"
-                                height="260">
-                            <figcaption class="our-team__figcuption">
-                                <div class="our-team__name">John Doe</div>
-                                <div class="our-team__function">UI Designer</div>
-                                <ul class="ul our-team__socialMedia">
-                                    <li class="li-social-media"><a class="our-team__socialMediaLink"
-                                            href="https://www.instagram.com/" target="_blank" title="istagram">
-                                            <div class="our-team__socialMediaCircle">
-                                                <svg class="our-team__socialMediaIcon">
-                                                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="li-social-media"><a class="our-team__socialMediaLink"
-                                            href="https://www.twitter.com/" target="_blank" title="twitter">
-                                            <div class="our-team__socialMediaCircle">
-                                                <svg class="our-team__socialMediaIcon">
-                                                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="li-social-media"><a class="our-team__socialMediaLink"
-                                            href="https://www.facebook.com/" target="_blank" title="facebook">
-                                            <div class="our-team__socialMediaCircle">
-                                                <svg class="our-team__socialMediaIcon">
-                                                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="li-social-media"><a class="our-team__socialMediaLink"
-                                            href="https://pl.linkedin.com/" target="_blank" title="facebook">
-                                            <div class="our-team__socialMediaCircle">
-                                                <svg class="our-team__socialMediaIcon">
-                                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </figcaption>
-                        </figure>
-                    </div>
+                    <figure class="our-team__figure">
+                        <img src="./images/ui-designer.jpg" alt="photo of marketing John Doe" width="100%-30px">
+                        <figcaption class="our-team__figcuption">
+                            <div class="our-team__name">John Doe</div>
+                            <div class="our-team__function">UI Designer</div>
+                            <ul class="ul our-team__socialMedia--mobile">
+                                <li class="li-social-media"><a class="our-team__socialMediaLink"
+                                        href="https://www.instagram.com/" target="_blank" title="istagram">
+                                        <div class="our-team__socialMediaCircle">
+                                            <svg class="our-team__socialMediaIcon">
+                                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="li-social-media"><a class="our-team__socialMediaLink"
+                                        href="https://www.twitter.com/" target="_blank" title="twitter">
+                                        <div class="our-team__socialMediaCircle">
+                                            <svg class="our-team__socialMediaIcon">
+                                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="li-social-media"><a class="our-team__socialMediaLink"
+                                        href="https://www.facebook.com/" target="_blank" title="facebook">
+                                        <div class="our-team__socialMediaCircle">
+                                            <svg class="our-team__socialMediaIcon">
+                                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="li-social-media"><a class="our-team__socialMediaLink"
+                                        href="https://pl.linkedin.com/" target="_blank" title="facebook">
+                                        <div class="our-team__socialMediaCircle">
+                                            <svg class="our-team__socialMediaIcon">
+                                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
                 </li>
             </ul>
         </article>
-        <article class="section our-client">
+        <article class="section section--mobile">
             <h2 class="presentation__h2">Nasi klienci</h2>
-            <ul class="ul">
+            <ul class="ul our-client">
                 <li>
                     <a class="our-client__link" href="https://www.google.pl/" target="_blank" title="client1">
-                        <div class="our-client__rectangle">
+                        <div class="our-client__rectangle--mobile">
                             <svg class="our-client__icon">
                                 <use href="./images/icons.svg#icon-client1"></use>
                             </svg>
@@ -369,14 +394,14 @@
                 </li>
                 <li>
                     <a class="our-client__link" href="https://www.google.pl/" target="_blank" title="client2">
-                        <div class="our-client__rectangle">
+                        <div class="our-client__rectangle--mobile">
                             <svg class="our-client__icon">
                                 <use href="./images/icons.svg#icon-client2"></use>
                             </svg>
                         </div>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="our-client__link" href="https://www.google.pl/" target="_blank" title="client2">
                         <div class="our-client__rectangle">
                             <svg class="our-client__icon">
@@ -411,7 +436,7 @@
                             </svg>
                         </div>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </article>
     </main>
@@ -535,6 +560,26 @@
             </form>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+        </ul>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/disabled-button.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
