@@ -688,9 +688,11 @@ text-align: center;
   .our-client {
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
-    justify-content: flex-start;
+    justify-content: center;
     width:100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
   }
   
   .our-client__rectangle--mobile {
@@ -700,7 +702,7 @@ text-align: center;
     border-radius: 4px;
     fill: #AFB1B8;
     position: relative;
-    margin: 15px;
+    /* margin: 15px; */
   }
   .our-client__icon {
     width: 106px;
@@ -837,7 +839,7 @@ text-align: center;
   
   .footer-right-part {
     width: 570px;
-    margin-left: 78px;
+    margin-left: 15px;
     padding-top: 72px;
   }
   .footer-right-part__newsletter {
@@ -853,14 +855,14 @@ text-align: center;
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 16px;
-    margin-left: 62px;
+    margin-left: 117px;
     
   }
   .footer-right-part__inputLabel {
     margin-top: 18px;
     background: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3019607843);
-    width: 330px;
+    width: 430px;
     border-radius: 4px;
     padding: 14px 0 14px 16px;
     font-size: 16px;
@@ -882,7 +884,7 @@ text-align: center;
     border-radius: 4px;
     border-color: #2196f3;
     background: #2196f3;
-    position: absolute;
+    /* position: absolute; */
   }
   .footer-right-part__btn--mobile {
     height: 50px;
@@ -891,7 +893,7 @@ text-align: center;
     padding-bottom: 10px;
     padding-left: 42px;
     margin-top: 20px;
-    margin-left: 65px;
+    margin-left: 105px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
