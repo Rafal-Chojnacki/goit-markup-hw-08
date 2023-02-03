@@ -94,7 +94,7 @@ img {
   margin: auto;
   display: block;
 }
-.link:hover > .logo--header, .linkfocus > .logo--header {
+.link:hover > .logo--header, .link:focus > .logo--header {
   color: #2196f3;
 }
 .link--header:hover > svg, .link--header:focus > svg {
