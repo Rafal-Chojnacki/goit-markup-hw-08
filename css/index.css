@@ -243,6 +243,9 @@ img {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.description__element {
+	margin-top: 30px;
+	}
 
 .description__rectangle {
 	width: 450px;
