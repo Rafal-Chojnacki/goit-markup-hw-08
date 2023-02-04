@@ -86,7 +86,7 @@
                         </svg>
                     </div>
                     <div class="description__text">
-                        <h3 class="description__h3 description__h3">LOREM IPSUM</h3>
+                        <h3 class="description__h3">LOREM IPSUM</h3>
                         <p class="description__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nam
                             vel
@@ -102,7 +102,7 @@
                     </div>
                     <div>
                         <div class="description__text">
-                            <h3 class="description__h3 description__h3">LOREM IPSUM</h3>
+                            <h3 class="description__h3">LOREM IPSUM</h3>
                             <p class="description__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit. Nam
                                 vel
@@ -118,8 +118,8 @@
                     </div>
                     <div>
                         <div class="description__text">
-                            <h3 class="description__h3 description__h3">LOREM IPSUM</h3>
-                            <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <h3 class="description__h3">LOREM IPSUM</h3>
+                            <p class="description__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Nam
                                 vel
                                 arcusem.
@@ -134,8 +134,8 @@
                     </div>
                     <div>
                         <div class="description__text">
-                            <h3 class="description__h3 description__h3">LOREM IPSUM</h3>
-                            <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <h3 class="description__h3">LOREM IPSUM</h3>
+                            <p class="description__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Nam
                                 vel
                                 arcusem.
@@ -147,33 +147,31 @@
         </article>
         <article class="section our-work">
                 <h2 class="presentation__h2">Czym się zajmujemy</h2>
-                <div>
-                    <ul class="our-work">
-                        <li class="our-work__image">
-                            <img src="./images/tablet.jpg" alt="programer working his desk office" width="370"
-                                height="294">
-                            <div class="our-work__backgroundForText">
-                                <p class="our-work__text">aplikacje komputerowe</p>
-                            </div>
-                        </li>
-                        <li class="our-work__image">
-                            <img src="./images/laptop.jpg"
-                                alt="designers are developing application smartphones team creators is working interface mobile phones"
-                                width="370" height="294">
-                            <div class="our-work__backgroundForText">
-                                <p class="our-work__text">aplikacje mobilne</p>
-                            </div>
-                        </li>
-                        <li class="our-work__image">
-                            <img src="./images/colours.jpg"
-                                alt="creative artist web design with working colour selection graphic tablet"
-                                width="370" height="294">
-                            <div class="our-work__backgroundForText">
-                                <P class="our-work__text">rozwiązania graficzne</P>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="ul our-work__list">
+                    <li class="our-work__image">
+                        <img src="./images/tablet.jpg" alt="programer working his desk office" width="370"
+                            height="294">
+                        <div class="our-work__backgroundForText">
+                            <p class="our-work__text">aplikacje komputerowe</p>
+                        </div>
+                    </li>
+                    <li class="our-work__image">
+                        <img src="./images/laptop.jpg"
+                            alt="designers are developing application smartphones team creators is working interface mobile phones"
+                            width="370" height="294">
+                        <div class="our-work__backgroundForText">
+                            <p class="our-work__text">aplikacje mobilne</p>
+                        </div>
+                    </li>
+                    <li class="our-work__image">
+                        <img src="./images/colours.jpg"
+                            alt="creative artist web design with working colour selection graphic tablet"
+                            width="370" height="294">
+                        <div class="our-work__backgroundForText">
+                            <P class="our-work__text">rozwiązania graficzne</P>
+                        </div>
+                    </li>
+                </ul>
         </article>
         <article class="section our-team">
             <h2 class="presentation__h2--ourTeam">Nasz zespół</h2>
@@ -372,7 +370,7 @@
                 </li>
             </ul>
         </article>
-        <article class="section our-clients">
+    <article class="section our-clients">
             <h2 class="presentation__h2">Nasi klienci</h2>
             <ul class="ul our-clients__list">
                 <li class="our-clients__element">
@@ -433,59 +431,61 @@
         </article>
     </main>
     <footer class="footer">
-        <div class="footer-upper-tablet"> 
+        <div class="footer-upper-tablet">
             <div class="footer-left-part">
-            <div class="footer__logo"><a class="link link--footerLeftPart" href="index.html" title="WebStudio"><span
-                        class="logo">Web</span><span class="logo logo--footer">Studio</span></a>
+                <div class="footer__logo"><a class="link link--footerLeftPart" href="index.html" title="WebStudio"><span
+                            class="logo">Web</span><span class="logo logo--footer">Studio</span></a>
+                </div>
+                <address class="footer-left-part__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+                <div class="footer-left-part__linkMail"><a class="link link--footerLeftPart"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </div>
+                <div class="footer-left-part__linkPhone"><a class="link link--footerLeftPart" href="tel:+48111111">+48
+                        111
+                        111 111</a></div>
             </div>
-            <address class="footer-left-part__address">m. Warszawa, Aleje Jerozolimskie 21</address>
-            <div class="footer-left-part__linkMail"><a class="link link--footerLeftPart"
-                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div class="footer-middle-part">
+                <h3 class="footer-middle-part__h3">dołącz do nas</h3>
+                <ul class="ul footer-middle-part__socialMedia">
+                    <li><a class="footer-middle-part__socialMediaLink" href="https://www.instagram.com/" target="_blank"
+                            title="istagram">
+                            <div class="footer-middle-part__socialMediaCircle">
+                                <svg class="footer-middle-part__icon">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a class="footer-middle-part__socialMediaLink" href="https://www.twitter.com/" target="_blank"
+                            title="twitter">
+                            <div class="footer-middle-part__socialMediaCircle">
+                                <svg class="footer-middle-part__icon">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="li-social-media"><a class="footer-middle-part__socialMediaLink"
+                            href="https://www.facebook.com/" target="_blank" title="facebook">
+                            <div class="footer-middle-part__socialMediaCircle">
+                                <svg class="footer-middle-part__icon">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="li-social-media"><a class="footer-middle-part__socialMediaLink"
+                            href="https://pl.linkedin.com/" target="_blank" title="facebook">
+                            <div class="footer-middle-part__socialMediaCircle">
+                                <svg class="footer-middle-part__icon">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-left-part__linkPhone"><a class="link link--footerLeftPart" href="tel:+48111111">+48 111
-                    111 111</a></div>
         </div>
-        <div class="footer-middle-part">
-            <h3 class="footer-middle-part__h3">dołącz do nas</h3>
-            <ul class="ul footer-middle-part__socialMedia">
-                <li><a class="footer-middle-part__socialMediaLink" href="https://www.instagram.com/" target="_blank"
-                        title="istagram">
-                        <div class="footer-middle-part__socialMediaCircle">
-                            <svg class="footer-middle-part__icon">
-                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li><a class="footer-middle-part__socialMediaLink" href="https://www.twitter.com/" target="_blank"
-                        title="twitter">
-                        <div class="footer-middle-part__socialMediaCircle">
-                            <svg class="footer-middle-part__icon">
-                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li class="li-social-media"><a class="footer-middle-part__socialMediaLink"
-                        href="https://www.facebook.com/" target="_blank" title="facebook">
-                        <div class="footer-middle-part__socialMediaCircle">
-                            <svg class="footer-middle-part__icon">
-                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li class="li-social-media"><a class="footer-middle-part__socialMediaLink"
-                        href="https://pl.linkedin.com/" target="_blank" title="facebook">
-                        <div class="footer-middle-part__socialMediaCircle">
-                            <svg class="footer-middle-part__icon">
-                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div></div>
         <div class="footer-right-part">
             <div class="footer-right-part__newsletter">
                 <div class="footer-right-part__newsletterEmail">
@@ -546,7 +546,8 @@
                 </div>
                 <div class="modal-window__accept">
                     <input class='modal-window__regulations' type='checkbox' onclick='toggle_submit(this)'>
-                    <label class="modal-window__acceptLabel">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę prywatności</a></label>
+                    <label class="modal-window__acceptLabel">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a
+                            href="">Politykę prywatności</a></label>
                     <button id='modal-window__btnAccept' type='submit' disabled='true'>Wyślij</button>
                 </div>
             </form>
