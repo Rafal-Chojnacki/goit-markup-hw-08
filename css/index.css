@@ -179,9 +179,18 @@ img {
 	height: 400px;
 	margin: auto;
 	background-color: #2f303a;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url('../images/main-index.jpg');
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url('../images/serviceOrder_x1.jpg');
 	background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+	.service-order {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url('../images/serviceOrder_x2.jpg');
+	}
+}
+
+
 .service-order__h1 {
 	width: 356px;
 	height: fit-content;
@@ -994,7 +1003,6 @@ input:checked + .modal-window__accept::before {
 	list-style-type: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	/* display: flex; */
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -1048,12 +1056,9 @@ container {
   margin: 0;
   list-style: none;
 }
-
-@media (max-width: 767px) {
   .menu {
     display: none;
   }
-}
 
 .menu .link {
   padding: 10px;
@@ -1082,11 +1087,10 @@ container {
   outline: none;
 }
 
-@media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
-}
+
 
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -1131,10 +1135,14 @@ container {
   text-decoration: none;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 748px){
 	.menuToggle {
 		display: none;
 	}
+	.menu-container {
+		display: none;
+	}
+
 	.header {
 		width: 748px;
 		height: 80px;
@@ -1301,7 +1309,13 @@ container {
 		text-align: center;
 	}
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
+	.menuToggle {
+		display: none;
+	}
+	.menu-container {
+		display: none;
+	}
 	.header {
 		width: 1600px;
 		height: 80px;
