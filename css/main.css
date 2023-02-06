@@ -820,7 +820,7 @@ img {
 }
 .footer {
   width: 480px;
-  height: 567px;
+  height: 603px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
@@ -1058,6 +1058,7 @@ img {
     -webkit-box-pack: safe;
         -ms-flex-pack: safe;
             justify-content: safe;
+    padding: 0;
   }
   .footer-middle-part {
     width: 206px;
@@ -1128,6 +1129,7 @@ img {
     display: flex;
   }
   .footer-upper-tablet {
+    width: auto;
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1146,7 +1148,7 @@ img {
     margin: 0;
   }
   .footer-middle-part {
-    width: 206px;
+    width: auto;
     margin: 0;
     padding-top: 65px;
     padding-left: 78px;
@@ -1155,9 +1157,9 @@ img {
             align-items: start;
   }
   .footer-right-part {
-    margin: 0;
-    padding-top: 62px;
-    padding-left: 70px;
+    margin-left: 78px;
+    margin-top: 0;
+    padding-top: 72px;
   }
   .footer-right-part__newsletterEmail {
     padding-top: 10px;
