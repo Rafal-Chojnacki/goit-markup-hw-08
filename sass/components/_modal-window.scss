@@ -179,7 +179,7 @@
 	&__commentText {
 		outline: none;
 		width: 337px;
-		height: 100px;
+		height: auto;
 		resize: none;
 		border: none;
 	}
@@ -194,8 +194,8 @@
 		position: absolute;
 		top: 20px;
 		left: 2px;
-		z-index: 1;
-		/* appearance: none; */
+		z-index: 6;
+		appearance: none;
 		display: block;
 		margin: 0;
 	}
