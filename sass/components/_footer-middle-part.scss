@@ -1,11 +1,18 @@
 .footer-middle-part {
 	width: 206px;
-	margin-left: 70px;
+	margin-left: 137px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
-	align-items: flex-start;
-	padding-top: 58px;
-
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: center;
+	padding-top: 60px;
+	
 	&__h3 {
 		text-transform: uppercase;
 		margin-bottom: 20px;
@@ -14,35 +21,41 @@
 		letter-spacing: 0.03em;
 	}
 	&__socialMedia {
+		display: flex;
+		justify-content: space-between;
 		width: 206px;
 		margin: 0;
 	}
 	&__socialMediaCircle {
-		fill: $footerIconFillColor;
+		fill: #ffffff;
 		width: 44px;
 		height: 44px;
 		border-radius: 50%;
 		position: relative;
-		background: $footerSocialMediaBackground;
+		background: rgba(255, 255, 255, 0.1019607843);
 	}
 	&__socialMediaCircle:hover,
 	&__socialMediaCircle:focus {
-		background-color: $mainBlueColor;
+		background-color: #2196f3;
+		-webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	&__socialMediaCircle:hover > svg,
 	&__socialMediaCircle:focus > svg {
-		fill: $footerIconFillColor;
+		fill: #ffffff;
+		-webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	&__socialMediaLink:hover > &__socialMediaCircle,
 	&__socialMediaLink:focus > &__socialMediaCircle {
-		background-color: $mainBlueColor;
+		background-color: #2196f3;
+		-webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
-	&__socialMediaLink:hover > &__socialMediaCircle > svg,
-	&__socialMediaLink:focus > &__socialMediaCircle > svg {
-		fill: $footerIconFillColor;
+	&__socialMediaLink:hover > .footer-middle-part__socialMediaCircle > svg,
+	&__socialMediaLink:focus > .footer-middle-part__socialMediaCircle > svg {
+		fill: #ffffff;
+		-webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	&__icon {
@@ -54,5 +67,21 @@
 		bottom: 0;
 		left: 0;
 		margin: auto;
+	}
+}
+@media (min-width: 748px) {
+	.footer-middle-part {
+		width: 206px;
+		margin: 0;
+		padding-top: 65px;
+	}
+}
+@media (min-width: 1200px) {
+	.footer-middle-part {
+		width: 206px;
+		margin: 0;
+		padding-top: 65px;
+		padding-left: 78px;
+		align-items: start;
 	}
 }

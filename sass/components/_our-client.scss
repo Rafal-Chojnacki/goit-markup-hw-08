@@ -1,11 +1,23 @@
-.our-client {
+.our-clients {
+	width: 480px;
+	height: auto;
+	margin-top: 60px;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+	}
+
 	&__rectangle {
 		height: 92px;
-		width: 170px;
-		border: 1px solid $indexMainIconFill;
+		width: 210px;
+		border: 1px solid #afb1b8;
 		border-radius: 4px;
-		fill: $indexMainIconFill;
+		fill: #afb1b8;
 		position: relative;
+		/* margin: 15px; */
 	}
 	&__icon {
 		width: 106px;
@@ -19,14 +31,31 @@
 	}
 	&__link:hover > &__rectangle,
 	&__link:focus > &__rectangle {
-		border: 1px solid $mainBlueColor;
-		fill: $mainBlueColor;
+		border: 1px solid #2196f3;
+		fill: #2196f3;
+		-webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	&__link:hover > .icon-rectangle-clients,
 	&__link:focus > .icon-rectangle-clients {
-		border: 1px solid $mainBlueColor;
-		fill: $mainBlueColor;
+		border: 1px solid #2196f3;
+		fill: #2196f3;
+		-webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+@media (min-width: 748px) {
+	.our-clients {
+		width: 748px;
+		padding-top: 60px;
+		margin-top: 60px;
+		height: max-content;
+		margin: auto;
+	}
+}
+@media (min-width: 1200px) {
+	.our-clients {
+		width: 1600px;
+		margin-top: 34px;
 	}
 }

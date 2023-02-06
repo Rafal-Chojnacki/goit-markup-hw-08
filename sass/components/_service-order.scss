@@ -1,36 +1,86 @@
 .service-order {
-	height: 600px;
-	background-color: $serviceOrderBackgroundColor;
-	background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url('../images/main-index.jpg');
-	
+	width: 480px;
+	height: 400px;
+	margin: auto;
+	background-color: #2f303a;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url('../images/serviceOrder_x1.jpg');
+	background-size: cover;
 
 	&__h1 {
-		padding: 106px 52px 0 452px;
+		width: 356px;
+		height: fit-content;
+		padding: 118px 58px 10px 57px;
 		margin: 0px;
-		font-size: 44px;
+		font-size: 26px;
 		font-weight: 900;
-		line-height: 60px;
+		line-height: 42px;
 		letter-spacing: 0.06em;
 		text-align: center;
-		color: $serviceOrderColor;
+		color: #ffffff;
 	}
 	&__btn {
 		font-weight: 700;
 		font-size: 16px;
 		border: none;
-		background-color: $mainBlueColor;
-		color: $BtnHoverColor;
+		background-color: #2196f3;
+		color: #ffffff;
 		width: 200px;
 		height: 50px;
-		margin: 0;
+		margin: auto;
 		padding: 10px 41px 10px 42px;
 		margin-top: 30px;
-		margin-left: 700px;
+		margin-left: 140px;
+		-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 		border-radius: 4px;
 	}
 	&__btn:hover,
 	&__btn:focus {
 		cursor: pointer;
+	}
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	.service-order {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)),
+			url('../images/serviceOrder_x2.jpg');
+	}
+}
+@media (min-width: 748px) {
+	.service-order {
+		width: 748px;
+		height: 400px;
+		margin: auto;
+
+		&__h1 {
+			width: 365px;
+			padding-left: 202px;
+			padding-top: 118px;
+		}
+		&__btn {
+			margin-top: 30px;
+			margin-left: 284px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.service-order {
+		width: 1600px;
+		height: 600px;
+		margin: auto;
+
+		&__h1 {
+			width: 696px;
+			padding-left: 425px;
+			padding-top: 118px;
+			font-size: 44px;
+			font-weight: 900;
+			line-height: 60px;
+			letter-spacing: 0.06em;
+			text-align: center;
+		}
+		&__btn {
+			margin-top: 30px;
+			margin-left: 700px;
+		}
+	}
 }

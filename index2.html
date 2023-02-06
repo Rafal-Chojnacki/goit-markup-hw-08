@@ -15,7 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
     </style>
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             </div>
             <div>
                 <button class="menuToggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg id="header-mobile__icon-hamburger">
+                    <svg id="header__icon-hamburger">
                         <use href="./images/icons.svg#icon-menu-hamburger"></use>
                     </svg>
                 </button>
@@ -179,9 +179,8 @@
                     <figure class="our-team__figure">
                         <img class="our-team__photo" alt="photo of Product Designer John Doe"
                             src="./images/produktDesigner_x1.jpg" srcset="./images/produktDesigner_x2.jpg 450w,
-                                    ./images/produktDesigner_x1.jpg 450pxw,
-                                     ./images/produktDesigner_x1.jpg 345px" 
-                        sizes="(min-width: 748px) 345px, (min-width: 480px) 450px "/>
+                                    ./images/produktDesigner_x1.jpg 345w"
+                            sizes="(min-width: 748px) 345px, (min-width: 480px) 450px " />
                         <figcaption class="our-team__figcuption">
                             <div class="our-team__name">John Doe</div>
                             <div class="our-team__function">Product Designer</div>
@@ -229,11 +228,9 @@
                 <li>
                     <figure class="our-team__figure">
                         <img class="our-team__photo" alt="photo of Frontend Developer John Doe"
-                            src="./images/frontendDeveloper_x1.jpg" 
-                            srcset="./images/frontendDeveloper_x2.jpg 450w,
-                                ./images/frontendDeveloper_x1.jpg 450px,
-                                 ./images/frontendDeveloper_x1.jpg 345px
-                    " sizes="(min-width: 748px) 345px, (min-width: 480px) 450px "/>
+                            src="./images/frontendDeveloper_x1.jpg" srcset="./images/frontendDeveloper_x2.jpg 450w,
+                                    ./images/frontendDeveloper_x1.jpg 345w
+                    " sizes="(min-width: 748px) 345px, (min-width: 480px) 450px " />
                         <figcaption class="our-team__figcuption">
                             <div class="our-team__name">John Doe</div>
                             <div class="our-team__function">Frontend Developer</div>
@@ -280,11 +277,10 @@
                 </li>
                 <li>
                     <figure class="our-team__figure">
-                        <img class="our-team__photo" alt="photo of marketing John Doe"
-                            src="./images/marketing_x1.jpg" 
-                            srcset="./images/marketing_x2.jpg 450px,
-                                ./images/marketing_x1.jpg 354px "
-                    sizes="(min-width: 748px) 345px, (min-width: 480px) 450px "/>
+                        <img class="our-team__photo" alt="photo of marketing John Doe" src="./images/marketing_x1.jpg"
+                            srcset="./images/marketing_x2.jpg 450w,
+                                ./images/marketing_x1.jpg 354w "
+                            sizes="(min-width: 748px) 345px, (min-width: 480px) 450px " />
                         <figcaption class="our-team__figcuption">
                             <div class="our-team__name">John Doe</div>
                             <div class="our-team__function">Marketing</div>
@@ -332,10 +328,9 @@
                 <li>
                     <figure class="our-team__figure">
                         <img class="our-team__photo" alt="photo of UI Designer John Doe"
-                            src="./images/uiDesigner_x1.jpg" 
-                            srcset="./images/uiDesigner_x2.jpg 450px,
-                                    ./uiDesigner_x1.jpg 354px "
-                            sizes="(min-width: 748px) 345px, (min-width: 480px) 450px "/>
+                            src="./images/uiDesigner_x1.jpg" srcset="./images/uiDesigner_x2.jpg 450w,
+                                    ./uiDesigner_x1.jpg 354w "
+                            sizes="(min-width: 748px) 345px, (min-width: 480px) 450px " />
                         <figcaption class="our-team__figcuption">
                             <div class="our-team__name">John Doe</div>
                             <div class="our-team__function">UI Designer</div>
@@ -565,19 +560,38 @@
             </form>
         </div>
     </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="toggleMenu js-close-menu">
-            <svg id="mobile-menu__iconClose">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
+    <div class="container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+            <use>
+                <svg class="mobile-menu__iconClose">
+                    <use href="./images/icons.svg/#icon-close"></use>
+                </svg>
         </button>
-
-        <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
+        <ul class=" ul mobile-menu">
+            <li><a href="" class="link-mobile-menu link--active" href="index.html" title="WebStudio">Agencja</a></li>
+            <li><a href="portfolio.html" class="link link-mobile-menu">Portfolio</a></li>
+            <li><a href="kontakt.html" class="link link-mobile-menu">Kontakt</a></li>
         </ul>
+        <div class="link-mobile-menu">
+            <ul class="ul">
+                <li><a class="link-mobile-menu link-mobile-menu--linkPhone" href="tel:+48111111">+48 111 111 111</a>
+                </li>
+                <li><a class="link-mobile-menu link-mobile-menu--linkMail"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu__socialMedia">
+            <ul class=" ul mobile-menu__socialMedia--list">
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.instagram.com/" title="Istagram">Istagram</a></li>
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.twitter.com/" title="Istagram">Twitter</a></li>
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.facebook.com/" title="Istagram">Facebook</a></li>
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.linkedin.com/" title="Istagram">LinkedIn</a></li>
+            </ul>
+        </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/disabled-button.js"></script>
