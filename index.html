@@ -565,19 +565,38 @@
             </form>
         </div>
     </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="toggleMenu js-close-menu">
-            <svg id="mobile-menu__iconClose">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
+    <div class="container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+            <use>
+                <svg class="mobile-menu__iconClose">
+                    <use href="../"></use>
+                </svg>
         </button>
-
-        <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
+        <ul class=" ul mobile-menu">
+            <li><a href="" class="link-mobile-menu link--active" href="index.html" title="WebStudio">Agencja</a></li>
+            <li><a href="" class="link link-mobile-menu">Portfolio</a></li>
+            <li><a href="" class="link link-mobile-menu">kontakt</a></li>
         </ul>
+        <div class="link-mobile-menu">
+            <ul class="ul">
+                <li><a class="link-mobile-menu link-mobile-menu--linkPhone" href="tel:+48111111">+48 111 111 111</a>
+                </li>
+                <li><a class="link-mobile-menu link-mobile-menu--linkMail"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu__socialMedia">
+            <ul class=" ul mobile-menu__socialMedia--list">
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.instagram.com/" title="Istagram">Istagram</a></li>
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.twitter.com/" title="Istagram">Twitter</a></li>
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.facebook.com/" title="Istagram">Facebook</a></li>
+                <li class="mobile-menu__socialMedia--element"><a class="link-mobile-menu link-mobile-menu--socialMedia"
+                        href="https://www.linkedin.com/" title="Istagram">LinkedIn</a></li>
+            </ul>
+        </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/disabled-button.js"></script>
