@@ -10,7 +10,8 @@
 	padding-bottom: 60px;
 }
 .footer-upper-tablet {
-	width: 737px;
+	width: auto;
+	padding-left: 108px;
 	margin: auto;
 	display: inline-block;
 	justify-content: space-around;
@@ -46,9 +47,6 @@
 }
 .footer-middle-part {
 	width: auto;
-	margin-left: 137px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -112,8 +110,7 @@
 }
 .footer-right-part {
 	width: auto;
-	margin-left: 15px;
-	padding-top: 72px;
+	padding-top: 60px;
 
 	&__newsletter {
 		height: 86px;
@@ -132,9 +129,10 @@
 	}
 	&__inputLabel {
 		margin-top: 18px;
+		margin-left: 15px;
 		background: #2f303a;
 		border: 1px solid rgba(255, 255, 255, 0.3019607843);
-		width: 430px;
+		width: 450px;
 		border-radius: 4px;
 		padding: 14px 0 14px 16px;
 		font-size: 16px;

@@ -831,7 +831,8 @@ img {
 }
 
 .footer-upper-tablet {
-  width: 737px;
+  width: auto;
+  padding-left: 108px;
   margin: auto;
   display: inline-block;
   -ms-flex-pack: distribute;
@@ -876,7 +877,6 @@ img {
 
 .footer-middle-part {
   width: auto;
-  margin-left: 137px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,8 +947,7 @@ img {
 
 .footer-right-part {
   width: auto;
-  margin-left: 15px;
-  padding-top: 72px;
+  padding-top: 60px;
 }
 .footer-right-part__newsletter {
   height: 86px;
@@ -967,9 +966,10 @@ img {
 }
 .footer-right-part__inputLabel {
   margin-top: 18px;
+  margin-left: 15px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
-  width: 430px;
+  width: 450px;
   border-radius: 4px;
   padding: 14px 0 14px 16px;
   font-size: 16px;
