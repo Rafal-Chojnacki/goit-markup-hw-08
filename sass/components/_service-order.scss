@@ -7,10 +7,9 @@
 	background-size: cover;
 
 	&__h1 {
-		width: 356px;
+		width: auto;
 		height: fit-content;
-		padding: 118px 58px 10px 57px;
-		margin: 0px;
+		padding: 118px 58px 0px 57px;
 		font-size: 26px;
 		font-weight: 900;
 		line-height: 42px;
@@ -52,9 +51,11 @@
 		margin: auto;
 
 		&__h1 {
-			width: 365px;
-			padding-left: 202px;
+			width: auto;
+			padding-left: 180px;
+			padding-right: 180px;
 			padding-top: 118px;
+			margin: 0;
 		}
 		&__btn {
 			margin-top: 30px;
@@ -66,12 +67,14 @@
 	.service-order {
 		width: 1600px;
 		height: 600px;
-		margin: auto;
+		margin-right: 452px;
 
 		&__h1 {
-			width: 696px;
-			padding-left: 425px;
+			width: auto;
+			padding-right: 452px;
+			padding-left: 452px;
 			padding-top: 118px;
+			margin-right: 0;
 			font-size: 44px;
 			font-weight: 900;
 			line-height: 60px;
