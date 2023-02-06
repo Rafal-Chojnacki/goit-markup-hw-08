@@ -257,6 +257,7 @@ img {
 }
 
 .link-mobile-menu {
+  color: black;
   display: block;
   text-decoration: none;
   font-family: Roboto;
@@ -1438,26 +1439,24 @@ input:checked + .modal-window__accept::before {
 }
 
 .container {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 480px;
   height: 796px;
+  margin: auto;
   padding: 48px 40px;
   background-color: #ffffff;
+  z-index: 3;
+  border: 1px solid black;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  border: solid 1px black;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-mobile-menu {
   display: block;
   text-decoration: none;
-  font-family: Roboto;
   font-size: 40px;
   font-weight: 500;
   line-height: 47px;
@@ -1466,8 +1465,12 @@ input:checked + .modal-window__accept::before {
   padding-bottom: 32px;
 }
 
+.link-mobile-menu--active {
+  color: #2196f3;
+}
+
 .link-mobile-menu--linkPhone {
-  margin-top: 302px;
+  margin-top: 270px;
   font-size: 34px;
   color: #2196f3;
 }
@@ -1479,7 +1482,6 @@ input:checked + .modal-window__accept::before {
 }
 
 .mobile-menu__socialMedia {
-  margin-top: 40px;
   height: 22px;
 }
 
@@ -1496,7 +1498,6 @@ input:checked + .modal-window__accept::before {
   display: -ms-flexbox;
   display: flex;
   height: 22px;
-  margin-top: 64px;
 }
 
 .mobile-menu__socialMedia--element {
@@ -1532,6 +1533,30 @@ input:checked + .modal-window__accept::before {
   background-color: transparent;
   cursor: pointer;
   border: none;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 21px;
+  left: 436px;
+  min-height: 18.67px;
+  min-width: 18.67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
 @media (min-width: 748px) {
