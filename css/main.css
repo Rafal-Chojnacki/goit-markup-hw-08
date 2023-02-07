@@ -1505,7 +1505,7 @@ input:checked + .modal-window__accept::before {
   position: relative;
   width: 480px;
   height: auto;
-  margin: auto;
+  margin-left: 0;
   padding: 48px 40px;
   background-color: #ffffff;
 }
