@@ -1538,7 +1538,7 @@ input:checked + .modal-window__accept::before {
 
 .menu-toggle {
   position: absolute;
-  left: 550px;
+  left: 425px;
   top: 10px;
   min-height: 40px;
   min-width: 40px;
