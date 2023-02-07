@@ -228,8 +228,8 @@
 	}
 	input:hover + &__accept::before,
 	input:focus + &__accept::before {
-		border-color: #2196f3;
-		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		background-image: url(/goit-markup-hw-06/images/check.jpg);
+		border: none;
 	}
 	&__regulations:hover,
 	input:focus {
