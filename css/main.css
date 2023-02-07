@@ -1502,7 +1502,6 @@ input:checked + .modal-window__accept::before {
 }
 
 .menu-box {
-  position: relative;
   width: 480px;
   height: auto;
   margin-left: 0;
@@ -1576,8 +1575,8 @@ input:checked + .modal-window__accept::before {
   padding: 32px;
   background-color: white;
   z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -1591,8 +1590,8 @@ input:checked + .modal-window__accept::before {
 
 .menu-container .menu-toggle {
   position: absolute;
+  left: 450px;
   top: 16px;
-  right: 16px;
   color: #fff;
 }
 
