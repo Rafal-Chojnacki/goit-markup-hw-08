@@ -4,19 +4,19 @@
 .link-mobile-menu--linkPhone {
 	margin-top: 270px;
 	font-size: 34px;
-	color: #2196f3;
+	color: $mainBlueColor;
 }
 .link-mobile-menu--linkMail {
 	font-size: 24px;
 	line-height: 28px;
-	color: #757575;
+	color: $mobileMenuLinkColor;
 }
 .mobile-menu__socialMedia {
 	height: 22px;
 }
 
 .link-mobile-menu--socialMedia {
-	color: #2196f3;
+	color: $mainBlueColor;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 22px;
@@ -28,7 +28,7 @@
 }
 
 .mobile-menu__socialMedia--element {
-	border-right: solid 1px #21212133;
+	border-right: solid 1px $mobileMenuSocialMediaBorder;
 	width: fit-content;
 	margin-right: 10px;
 	padding-right: 10px;
@@ -61,7 +61,7 @@
 	height: auto;
 	margin-left:0;
 	padding: 48px 40px;
-	background-color: #ffffff;
+	background-color: $mobileMenuBoxBackgroundColor;
 	
 }
 
@@ -113,7 +113,7 @@
 
 .menu-toggle:hover > svg,
 .menu-toggle:focus > svg {
-	fill: #2196f3;
+	fill: $mainBlueColor;
 	
 }
 
@@ -124,7 +124,7 @@
 	width: 100vw;
 	height: 100vh;
 	padding: 32px;
-	background-color: white;
+	background-color: $mobileMenuBoxBackgroundColor;
 	z-index: 999;
 	transform: translateX(120%);
 	transition: transform 250ms ease-in-out;
@@ -150,7 +150,6 @@
 .mobile-menu .link-mobile {
 	display: block;
 	padding: 10px;
-	color: black;
 	text-decoration: none;
 	font-size: 40px;
 	font-weight: 500;
@@ -159,8 +158,8 @@
 	text-align: left;
 }
 .mobile-menu .link-mobile--active {
-	color: #2196f3;
+	color: $mainBlueColor;
 }
 .mobile-menu .link-mobile:hover {
-	color: #2196f3;
+	color: $mainBlueColor;
 }

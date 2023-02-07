@@ -2,7 +2,7 @@
 	width: 480px;
 	height: 400px;
 	margin: auto;
-	background-color: #2f303a;
+	background-color: $serviceOrderBackgroundColor;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url('../images/serviceOrder_x1.jpg');
 	background-size: cover;
 
@@ -16,14 +16,14 @@
 		line-height: 42px;
 		letter-spacing: 0.06em;
 		text-align: center;
-		color: #ffffff;
+		color: $serviceOrderColor;
 	}
 	&__btn {
 		font-weight: 700;
 		font-size: 16px;
 		border: none;
-		background-color: #2196f3;
-		color: #ffffff;
+		background-color: $mainBlueColor;
+		color: $serviceOrderColor;
 		width: 200px;
 		height: 50px;
 		margin: auto;
