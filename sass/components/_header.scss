@@ -101,12 +101,12 @@
 	border: none;
 	background-color: #fff;
 }
-@media (min-width: 748px) {
+@media (min-width: 767px) {
 	.menuToggle {
 		display: none;
 	}
 	.header {
-		width: 748px;
+		width: 767px;
 		height: 80px;
 
 		header__logo {

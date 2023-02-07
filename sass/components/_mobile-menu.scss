@@ -41,12 +41,10 @@
 }
 
 .container {
+	padding-top: 10px;
 	min-width: 320px;
 	max-width: 1170px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 276px;
 }
 
 .mobile-menu {
@@ -59,6 +57,7 @@
 	height: 18.67px;
 }
 .menu-box {
+	position: relative;
 	width: 480px;
 	height: auto;
 	margin: auto;
@@ -74,7 +73,7 @@
 	list-style: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.menu {
 		display: none;
 	}
@@ -92,9 +91,7 @@
 }
 
 .menu-toggle {
-	position: absolute;
-	left: 425px;
-	top: 10px;
+	margin-left: 276px;
 	min-height: 40px;
 	min-width: 40px;
 	display: flex;
@@ -109,7 +106,7 @@
 	outline: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
 	.menu-toggle {
 		display: none;
 	}
