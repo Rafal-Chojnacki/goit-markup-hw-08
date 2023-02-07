@@ -1,6 +1,7 @@
 .header {
 	margin: auto;
 	width: 480px;
+	height: 60px;
 	display: flex;
 
 	&__logo {
@@ -26,6 +27,10 @@
 		margin: auto;
 		display: none;
 	}
+	&__menuButton {
+		margin-left: 276px;
+		margin-top: 10px;
+	}
 }
 #header-mobile__icon-hamburger {
 	width: 24px;
@@ -35,6 +40,7 @@
 	display: none;
 	position: relative;
 	width: 521px;
+	height: auto;
 	display: none;
 	padding-left: 93px;
 	font-size: 14px;
@@ -109,8 +115,8 @@
 		width: 767px;
 		height: 80px;
 
-		header__logo {
-			padding: 26px 15px;
+		&__logo {
+			margin-top: 10px;
 		}
 	}
 
@@ -118,9 +124,12 @@
 		display: flex;
 		padding-left: 68px;
 	}
+	.header-nav-subpages {
+		top: 22px;
+		}
 	.header-nav-contact {
-		padding: 21px;
 		position: absolute;
+		top: 11px;
 		left: 401px;
 	}
 }
@@ -144,10 +153,15 @@
 		display: inline-block;
 		padding-left: 0;
 	}
+	.header-nav-subpages {
+		position: absolute;
+		top: 8px;
+		}
 	.header-nav-contact {
 		position: absolute;
 		left: 599px;
 		top: 11px;
+		padding:0;
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 14px;

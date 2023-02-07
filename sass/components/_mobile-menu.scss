@@ -40,7 +40,7 @@
 	padding-right: 10px;
 }
 
-.container {
+.mobile-menu-container {
 	padding-top: 10px;
 	min-width: 320px;
 	max-width: 1170px;
@@ -90,9 +90,9 @@
 }
 
 .menu-toggle {
-	margin-left: 276px;
-	min-height: 40px;
-	min-width: 40px;
+	padding-left: 276px;
+	height: 40px;
+	width: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
