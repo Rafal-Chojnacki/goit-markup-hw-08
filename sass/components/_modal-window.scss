@@ -195,7 +195,7 @@
 		top: 20px;
 		left: 2px;
 		z-index: 6;
-		appearance: none;
+		// appearance: none;
 		display: block;
 		margin: 0;
 	}
@@ -221,22 +221,24 @@
 		content: '';
 		display: block;
 		position: absolute;
-		top: 18px;
+		top: 40px;
 		border: 1px solid black;
 		width: 16px;
 		height: 15px;
 	}
-	input:hover + &__accept::before,
-	input:focus + &__accept::before {
-		background-image: url(/goit-markup-hw-06/images/check.jpg);
-		border: none;
-	}
-	&__regulations:hover,
-	input:focus {
-		cursor: pointer;
-	}
-	input:checked + &__accept::before {
-		background-image: url(/goit-markup-hw-06/images/check.jpg);
-		border: none;
-	}
+	
+}
+
+input:hover + .modal-window__accept::before,
+input:focus + .modal-window__accept::before {
+	border-color: #2196f3;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:hover,
+input:focus {
+	cursor: pointer;
+}
+input:checked + .modal-window__accept::before {
+	background-image: url(/images/icons.svg);
+	border: none;
 }
