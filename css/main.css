@@ -1393,7 +1393,8 @@ img {
   position: absolute;
   top: 20px;
   left: 2px;
-  z-index: 1000;
+  z-index: 2;
+  opacity: 0;
   display: block;
   margin: 0;
 }
@@ -1419,6 +1420,7 @@ img {
   display: block;
   position: absolute;
   left: -20px;
+  z-index: 1;
   border: 1px solid black;
   width: 16px;
   height: 15px;
@@ -1437,8 +1439,8 @@ input:focus {
 }
 
 input:checked + .modal-window__acceptLabel::before {
-  background-image: url(/images/icons.svg);
-  border: 4px solid red;
+  background-image: url(/images/icon\ check.jpg);
+  border: none;
 }
 
 .link-mobile-menu--active {
