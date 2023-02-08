@@ -1393,15 +1393,16 @@ img {
   position: absolute;
   top: 20px;
   left: 2px;
-  z-index: 6;
-  appearance: none;
+  z-index: 1000;
   display: block;
   margin: 0;
 }
 .modal-window__acceptLabel {
   display: block;
   width: 397px;
-  position: relative;
+  position: absolute;
+  top: 19px;
+  left: 20px;
   margin: 0;
   font-size: 12px;
   line-height: 14px;
@@ -1414,12 +1415,10 @@ img {
   color: #2196f3;
 }
 .modal-window__acceptLabel::before {
-  position: absolute;
-  top:19px;
-  left: 1px;
   content: "";
   display: block;
-  margin: 0;
+  position: absolute;
+  left: -20px;
   border: 1px solid black;
   width: 16px;
   height: 15px;

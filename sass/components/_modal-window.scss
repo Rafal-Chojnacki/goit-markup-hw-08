@@ -194,7 +194,7 @@
 		position: absolute;
 		top: 20px;
 		left: 2px;
-		z-index: 6;
+		z-index: 1000;
 		// appearance: none;
 		display: block;
 		margin: 0;
@@ -204,8 +204,8 @@
 		display: block;
 		width: 397px;
 		position: absolute;
-		top: 20px;
-		left: 24px;
+		top:19px;
+		left:20px;
 		margin: 0;
 		font-size: 12px;
 		line-height: 14px;
@@ -222,7 +222,7 @@
 		content: '';
 		display: block;
 		position: absolute;
-		top: 152px;
+		left: -20px;
 		border: 1px solid black;
 		width: 16px;
 		height: 15px;
@@ -240,7 +240,7 @@ input:focus {
 	cursor: pointer;
 }
 input:checked + .modal-window__acceptLabel::before {
-	background-image: url(/goit-markup-hw-08/images/icons.svg);
+	background-image: url(/images/icons.svg);
 	border: 4px solid red;
 
 }
