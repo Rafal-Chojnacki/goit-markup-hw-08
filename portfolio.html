@@ -15,24 +15,35 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
     </style>
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header>
         <div class="header--portfolio">
-            <div class="header__logo"><a class="link link--header" href="index.html" title="WebStudio">
-                    <span class="logo">Web</span><span class="logo logo--header">Studio</span></a>
+            <div class="header__logo">
+                <a class="link link--header" href="index.html" title="WebStudio">
+                    <span class="logo">Web</span><span class="logo logo--header">Studio</span>
+                </a>
+            </div>
+            <div>
+                <div class="header__menuButton">
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg id="header-mobile__icon-hamburger">
+                            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                        </svg>
+                    </button>
+                </div>
                 <nav class="header-nav">
                     <div class="header-nav-subpages">
-                        <ul class="ul">
+                        <ul class="ul header-nav-subpages__list">
                             <li class="header-nav-subpages__element">
                                 <a class="link link--header" href="index.html" title="WebStudio">Agencja</a>
-                                <div class="header__linkUnderline"></div>
                             </li>
                             <li class="header-nav-subpages__element">
                                 <a class="link link--active" href="portfolio.html"
                                     title="Portfolio WebStudio">Portfolio</a>
+                                <div class="header__linkUnderline"></div>
                             </li>
                             <li class="header-nav-subpages__element">
                                 <a class="link link--header" href="kontakt.html" title="Kontakt">Kontakt</a>
@@ -41,7 +52,7 @@
                         </ul>
                     </div>
                     <div class="header-nav-contact">
-                        <ul class="ul header-nav-contact_list">
+                        <ul class="ul header-nav-contact__list">
                             <li class="header-nav-contact__element">
                                 <a class="link link--header" href="mailto:info@devstudio.com"><svg
                                         id="header-nav-contact__icon-envelope">
@@ -58,7 +69,7 @@
                     </div>
                 </nav>
             </div>
-        </div>
+        </div />
     </header>
     <main class="container">
         <div class="portfolio">

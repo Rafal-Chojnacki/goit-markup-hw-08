@@ -6,6 +6,9 @@
   display: -ms-flexbox;
   display: flex;
 }
+.header--portfolio {
+  border-bottom: 1px solid #ececec;
+}
 .header__logo {
   width: 134px;
   height: 28px;
@@ -108,7 +111,6 @@
   margin-top: 10px;
   margin-left: 276px;
   border: none;
-  background-color: #fff;
 }
 
 @media (min-width: 767px) {
@@ -1674,7 +1676,7 @@ input:checked + .modal-window__acceptLabel::before {
 }
 .portfolio__text {
   background: #2196f3;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -1749,7 +1751,7 @@ input:checked + .modal-window__acceptLabel::before {
   font-weight: 700;
   font-size: 16px;
   border: none;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   color: #212121;
   height: 38px;
   width: auto;
