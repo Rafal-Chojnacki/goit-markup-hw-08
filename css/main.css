@@ -1538,7 +1538,7 @@ input:checked + .modal-window__acceptLabel::before {
 }
 .menu .link {
   padding: 10px;
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 
@@ -1606,6 +1606,7 @@ input:checked + .modal-window__acceptLabel::before {
 }
 
 .mobile-menu .link-mobile {
+  color: black;
   display: block;
   padding: 10px;
   text-decoration: none;
