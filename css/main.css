@@ -1414,11 +1414,11 @@ img {
   text-decoration: none;
   color: #2196f3;
 }
-.modal-window__checkboxSpan::after {
+.modal-window__chceckboxSpan::after {
   content: "";
   display: block;
   position: absolute;
-  top: 40px;
+  top: 152px;
   border: 1px solid black;
   width: 16px;
   height: 15px;
