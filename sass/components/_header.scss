@@ -5,7 +5,11 @@
 	display: flex;
 
 	&--portfolio {
+		width: 480px;
+		height: 60px;
+		margin: auto;
 		border-bottom: 1px solid $portfolioBorderColor;
+		display: flex;
 	}
 
 	&__logo {
@@ -22,7 +26,7 @@
 		content: '';
 		width: 53px;
 		height: 4px;
-		background-color:$mainBlueColor;
+		background-color: $mainBlueColor;
 		position: absolute;
 		top: 46px;
 		right: 0;
@@ -119,6 +123,10 @@
 		&__logo {
 			margin-top: 10px;
 		}
+		&--portfolio {
+			width: 767px;
+			height: 80px;
+		}
 	}
 
 	.header-nav {
@@ -127,7 +135,7 @@
 	}
 	.header-nav-subpages {
 		top: 22px;
-		}
+	}
 	.header-nav-contact {
 		position: absolute;
 		top: 11px;
@@ -157,12 +165,12 @@
 	.header-nav-subpages {
 		position: absolute;
 		top: 8px;
-		}
+	}
 	.header-nav-contact {
 		position: absolute;
 		left: 599px;
 		top: 11px;
-		padding:0;
+		padding: 0;
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 14px;

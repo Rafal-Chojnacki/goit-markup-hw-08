@@ -1,18 +1,20 @@
 .portfolio {
-	width: 1200px;
-	margin-left: 215px;
-	margin-right: 0px;
-	padding-top: 94px;
+	width: 480pxpx;
+	margin:auto;
+	padding-top: 60px;
 	&__cards {
-		flex-wrap: wrap;
+		flex-wrap:nowrap;
 		row-gap: 30px;
-		width: 1170px;
+		width: 480px;
+		margin: auto;
 	}
 	&__card {
 		line-height: 26px;
-		width: 370px;
-		height: 404px;
+		width: 450px;
+		height: auto;
 		border: 1px solid $portfolioCardBorder;
+		margin: auto;
+		margin-bottom: 30px;
 	}
 	&__card:hover &__text {
 		transform: translateY(0);

@@ -244,6 +244,6 @@ input:focus {
 	cursor: pointer;
 }
 input:checked + .modal-window__acceptLabel::before {
-	background-image: url(/images/iconCheck.jpg);
+	background-image: url(goit-markup-hw-08/images/iconCheck.jpg);
 	border: none;
 }

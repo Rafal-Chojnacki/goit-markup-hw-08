@@ -1,14 +1,17 @@
 .portfolio-nav {
-	display: flex;
-	justify-content: space-between;
-	padding-left: 295px;
+	width: 480px;
+	margin: 0 auto;
 
 	&__subpages {
+		width: 392px;
 		padding: 0;
 		margin: 0;
 		list-style-type: none;
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content:left;
+		column-gap: 8px;
+		row-gap: 15px;
 	}
 
 	&__subpage {
@@ -16,8 +19,9 @@
 		font-size: 14px;
 		letter-spacing: 0.03em;
 		margin: 4px;
-		float: left;
+		
 	}
+	
 
 	&__btn {
 		font-weight: 700;
@@ -28,6 +32,19 @@
 		height: 38px;
 		width: auto;
 		padding: 6px 22px;
+		text-align: center;
+		// &:first-of-type {
+		// 	width: 103px;
+		// 	height: 38px;
+		// }
+		&:nth-of-type(2) {
+			width: 138px;
+			height: 38px;
+		}
+		&:nth-of-type(3) {
+			width: 138px;
+			height: 38px;
+		}
 	}
 	&__btn:hover,
 	&__btn:focus {
