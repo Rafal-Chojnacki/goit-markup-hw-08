@@ -1265,9 +1265,10 @@ img {
   position: absolute;
 }
 .modal-window__btnClose:hover, .modal-window__btnClose:focus {
-  background-color: rgb(105, 103, 103);
-  color: #212121;
   cursor: pointer;
+}
+.modal-window__btnClose:hover > svg, .modal-window__btnClose:focus > svg {
+  fill: #2196f3;
 }
 .modal-window__iconClose {
   width: 11px;

@@ -64,10 +64,13 @@
 	}
 	&__btnClose:hover,
 	&__btnClose:focus {
-		background-color: rgb(105, 103, 103);
-		color: #212121;
 		cursor: pointer;
 	}
+	&__btnClose:hover > svg,
+	&__btnClose:focus > svg {
+		fill: #2196f3;
+	}
+
 	&__iconClose {
 		width: 11px;
 		height: 11px;
@@ -204,8 +207,8 @@
 		display: block;
 		width: 397px;
 		position: absolute;
-		top:19px;
-		left:20px;
+		top: 19px;
+		left: 20px;
 		margin: 0;
 		font-size: 12px;
 		line-height: 14px;
@@ -217,7 +220,7 @@
 		text-decoration: none;
 		color: #2196f3;
 	}
-	
+
 	&__acceptLabel::before {
 		content: '';
 		display: block;
@@ -228,7 +231,6 @@
 		width: 16px;
 		height: 15px;
 	}
-	
 }
 
 input:hover + .modal-window__acceptLabel::before,
@@ -242,6 +244,5 @@ input:focus {
 }
 input:checked + .modal-window__acceptLabel::before {
 	background-image: url(/images/icon\ check.jpg);
-	border:none;
-
+	border: none;
 }
