@@ -217,11 +217,12 @@
 		text-decoration: none;
 		color: #2196f3;
 	}
-	&__accept::before {
+	
+	&__checkboxSpan::after {
 		content: '';
 		display: block;
 		position: absolute;
-		top: 40px;
+		top: 20px;
 		border: 1px solid black;
 		width: 16px;
 		height: 15px;
@@ -229,8 +230,8 @@
 	
 }
 
-input:hover + .modal-window__accept::before,
-input:focus + .modal-window__accept::before {
+input:hover~.modal-window__checkboxSpan::after,
+input:focus~.modal-window__checkboxSpan::after {
 	border-color: #2196f3;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -238,7 +239,8 @@ input:hover,
 input:focus {
 	cursor: pointer;
 }
-input:checked + .modal-window__accept::before {
+input:checked~.modal-window__checkboxSpan::after {
 	background-image: url(/images/icons.svg);
-	border: none;
+	border: 4px solid red;
+
 }
