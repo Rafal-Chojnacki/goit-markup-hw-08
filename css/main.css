@@ -1452,7 +1452,7 @@ input:focus {
 }
 
 input:checked + .modal-window__acceptLabel::before {
-  background-image: url(https://rafal-chojnacki.github.io/goit-markup-hw-08/images/iconCheck.jpg);
+  background-image: url("https://rafal-chojnacki.github.io/goit-markup-hw-08/images/iconCheck.jpg");
   border: none;
 }
 
